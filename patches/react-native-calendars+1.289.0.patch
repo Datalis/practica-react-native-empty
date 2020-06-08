@@ -1,0 +1,249 @@
+diff --git a/node_modules/react-native-calendars/.eslintrc.js b/node_modules/react-native-calendars/.eslintrc.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/.nvmrc b/node_modules/react-native-calendars/.nvmrc
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/.prettierrc.js b/node_modules/react-native-calendars/.prettierrc.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/CHANGELOG.md b/node_modules/react-native-calendars/CHANGELOG.md
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/ISSUE_TEMPLATE.md b/node_modules/react-native-calendars/ISSUE_TEMPLATE.md
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/LICENSE b/node_modules/react-native-calendars/LICENSE
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/README.md b/node_modules/react-native-calendars/README.md
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/e2e/agenda.spec.js b/node_modules/react-native-calendars/e2e/agenda.spec.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/e2e/app.spec.js b/node_modules/react-native-calendars/e2e/app.spec.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/e2e/calendars.spec.js b/node_modules/react-native-calendars/e2e/calendars.spec.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/e2e/calendarsList.spec.js b/node_modules/react-native-calendars/e2e/calendarsList.spec.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/e2e/horizontalList.spec.js b/node_modules/react-native-calendars/e2e/horizontalList.spec.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/e2e/init.js b/node_modules/react-native-calendars/e2e/init.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/e2e/mocha.opts b/node_modules/react-native-calendars/e2e/mocha.opts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/pom.xml b/node_modules/react-native-calendars/pom.xml
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/spec/runner.js b/node_modules/react-native-calendars/spec/runner.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/spec/support/jasmine.json b/node_modules/react-native-calendars/spec/support/jasmine.json
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/src/agenda/img/knob@2x.png b/node_modules/react-native-calendars/src/agenda/img/knob@2x.png
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/src/agenda/index.js b/node_modules/react-native-calendars/src/agenda/index.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/src/agenda/platform-style.ios.js b/node_modules/react-native-calendars/src/agenda/platform-style.ios.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/src/agenda/platform-style.js b/node_modules/react-native-calendars/src/agenda/platform-style.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/src/agenda/reservation-list/index.js b/node_modules/react-native-calendars/src/agenda/reservation-list/index.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/src/agenda/reservation-list/reservation.js b/node_modules/react-native-calendars/src/agenda/reservation-list/reservation.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/src/agenda/reservation-list/style.js b/node_modules/react-native-calendars/src/agenda/reservation-list/style.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/src/agenda/style.js b/node_modules/react-native-calendars/src/agenda/style.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/src/calendar-list/index.js b/node_modules/react-native-calendars/src/calendar-list/index.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/src/calendar-list/item.js b/node_modules/react-native-calendars/src/calendar-list/item.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/src/calendar-list/style.js b/node_modules/react-native-calendars/src/calendar-list/style.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/src/calendar/day/basic/index.js b/node_modules/react-native-calendars/src/calendar/day/basic/index.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/src/calendar/day/basic/style.js b/node_modules/react-native-calendars/src/calendar/day/basic/style.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/src/calendar/day/custom/index.js b/node_modules/react-native-calendars/src/calendar/day/custom/index.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/src/calendar/day/custom/style.js b/node_modules/react-native-calendars/src/calendar/day/custom/style.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/src/calendar/day/multi-dot/index.js b/node_modules/react-native-calendars/src/calendar/day/multi-dot/index.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/src/calendar/day/multi-dot/style.js b/node_modules/react-native-calendars/src/calendar/day/multi-dot/style.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/src/calendar/day/multi-period/index.js b/node_modules/react-native-calendars/src/calendar/day/multi-period/index.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/src/calendar/day/multi-period/style.js b/node_modules/react-native-calendars/src/calendar/day/multi-period/style.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/src/calendar/day/period/index.js b/node_modules/react-native-calendars/src/calendar/day/period/index.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/src/calendar/day/period/style.js b/node_modules/react-native-calendars/src/calendar/day/period/style.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/src/calendar/dot/index.js b/node_modules/react-native-calendars/src/calendar/dot/index.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/src/calendar/dot/style.js b/node_modules/react-native-calendars/src/calendar/dot/style.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/src/calendar/header/index.js b/node_modules/react-native-calendars/src/calendar/header/index.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/src/calendar/header/style.js b/node_modules/react-native-calendars/src/calendar/header/style.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/src/calendar/img/next.png b/node_modules/react-native-calendars/src/calendar/img/next.png
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/src/calendar/img/next@1.5x.android.png b/node_modules/react-native-calendars/src/calendar/img/next@1.5x.android.png
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/src/calendar/img/next@2x.android.png b/node_modules/react-native-calendars/src/calendar/img/next@2x.android.png
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/src/calendar/img/next@2x.ios.png b/node_modules/react-native-calendars/src/calendar/img/next@2x.ios.png
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/src/calendar/img/next@3x.android.png b/node_modules/react-native-calendars/src/calendar/img/next@3x.android.png
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/src/calendar/img/next@4x.android.png b/node_modules/react-native-calendars/src/calendar/img/next@4x.android.png
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/src/calendar/img/previous.png b/node_modules/react-native-calendars/src/calendar/img/previous.png
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/src/calendar/img/previous@1.5x.android.png b/node_modules/react-native-calendars/src/calendar/img/previous@1.5x.android.png
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/src/calendar/img/previous@2x.android.png b/node_modules/react-native-calendars/src/calendar/img/previous@2x.android.png
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/src/calendar/img/previous@2x.ios.png b/node_modules/react-native-calendars/src/calendar/img/previous@2x.ios.png
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/src/calendar/img/previous@3x.android.png b/node_modules/react-native-calendars/src/calendar/img/previous@3x.android.png
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/src/calendar/img/previous@4x.android.png b/node_modules/react-native-calendars/src/calendar/img/previous@4x.android.png
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/src/calendar/index.js b/node_modules/react-native-calendars/src/calendar/index.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/src/calendar/style.js b/node_modules/react-native-calendars/src/calendar/style.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/src/calendar/updater.js b/node_modules/react-native-calendars/src/calendar/updater.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/src/component-updater.js b/node_modules/react-native-calendars/src/component-updater.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/src/dateutils.js b/node_modules/react-native-calendars/src/dateutils.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/src/expandableCalendar/agendaList.js b/node_modules/react-native-calendars/src/expandableCalendar/agendaList.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/src/expandableCalendar/asCalendarConsumer.js b/node_modules/react-native-calendars/src/expandableCalendar/asCalendarConsumer.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/src/expandableCalendar/calendarContext.js b/node_modules/react-native-calendars/src/expandableCalendar/calendarContext.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/src/expandableCalendar/calendarProvider.js b/node_modules/react-native-calendars/src/expandableCalendar/calendarProvider.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/src/expandableCalendar/commons.js b/node_modules/react-native-calendars/src/expandableCalendar/commons.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/src/expandableCalendar/index.js b/node_modules/react-native-calendars/src/expandableCalendar/index.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/src/expandableCalendar/style.js b/node_modules/react-native-calendars/src/expandableCalendar/style.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/src/expandableCalendar/week.js b/node_modules/react-native-calendars/src/expandableCalendar/week.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/src/expandableCalendar/weekCalendar.js b/node_modules/react-native-calendars/src/expandableCalendar/weekCalendar.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/src/img/down.png b/node_modules/react-native-calendars/src/img/down.png
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/src/img/down@1.5x.png b/node_modules/react-native-calendars/src/img/down@1.5x.png
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/src/img/down@2x.png b/node_modules/react-native-calendars/src/img/down@2x.png
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/src/img/down@3x.png b/node_modules/react-native-calendars/src/img/down@3x.png
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/src/img/down@4x.png b/node_modules/react-native-calendars/src/img/down@4x.png
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/src/img/up.png b/node_modules/react-native-calendars/src/img/up.png
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/src/img/up@1.5x.png b/node_modules/react-native-calendars/src/img/up@1.5x.png
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/src/img/up@2x.png b/node_modules/react-native-calendars/src/img/up@2x.png
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/src/img/up@3x.png b/node_modules/react-native-calendars/src/img/up@3x.png
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/src/img/up@4x.png b/node_modules/react-native-calendars/src/img/up@4x.png
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/src/index.js b/node_modules/react-native-calendars/src/index.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/src/input.js b/node_modules/react-native-calendars/src/input.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/src/interface.js b/node_modules/react-native-calendars/src/interface.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/src/style.js b/node_modules/react-native-calendars/src/style.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/react-native-calendars/src/testIDs.js b/node_modules/react-native-calendars/src/testIDs.js
+old mode 100644
+new mode 100755
