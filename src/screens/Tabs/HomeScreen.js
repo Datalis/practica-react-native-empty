@@ -56,7 +56,7 @@ const Item = props => {
 
 const HomeScreen = props => {
   return (
-    <View style={{flex: 1}}>
+    <View style={{flex: 1, paddingTop: 20, backgroundColor: 'white'}}>
       <FlatList
         keyExtractor={(item, index) => index.toString()}
         data={expenses}

@@ -23,7 +23,7 @@ function ExpensesNavigator() {
       <Stack.Screen
         name="HomeTabs"
         options={{
-          headerTitle: 'Home',
+          headerTitle: 'Inicio',
         }}
         component={HomeTabs}
       />
