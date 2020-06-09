@@ -5,15 +5,26 @@ import {createStackNavigator} from '@react-navigation/stack';
 import ExpensesScreen from '../screens/ExpensesScreen';
 import ExpenseForm from '../screens/ExpenseForm';
 import HomeTabs from './HomeTabs';
+import {generalStyles} from '../styles';
 
 const Stack = createStackNavigator();
 
 function ExpensesNavigator() {
   return (
-    <Stack.Navigator initialRouteName="HomeTabs" headerMode="screen">
+    <Stack.Navigator
+      initialRouteName="HomeTabs"
+      headerMode="screen"
+      screenOptions={{
+        headerTitleStyle: {...generalStyles.screenTitle},
+        headerStyle: {
+          elevation: 0,
+        },
+      }}>
       <Stack.Screen
         name="HomeTabs"
-        options={{headerShown: false}}
+        options={{
+          headerTitle: 'Home',
+        }}
         component={HomeTabs}
       />
       <Stack.Screen

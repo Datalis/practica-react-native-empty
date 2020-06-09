@@ -7,7 +7,7 @@
  */
 
 import React, {Component} from 'react';
-import Drawer from './src/navigation/drawer';
+import Drawer from './src/navigation/Drawer';
 
 class App extends Component {
   render() {
