@@ -6,10 +6,11 @@ import ExpensesScreen from '../screens/ExpensesScreen';
 import ExpenseForm from '../screens/ExpenseForm';
 import HomeTabs from './HomeTabs';
 import {generalStyles} from '../styles';
+import {Icon, Button} from 'react-native-elements';
 
 const Stack = createStackNavigator();
 
-function ExpensesNavigator() {
+function ExpensesNavigator(props) {
   return (
     <Stack.Navigator
       initialRouteName="HomeTabs"
@@ -24,6 +25,19 @@ function ExpensesNavigator() {
         name="HomeTabs"
         options={{
           headerTitle: 'Inicio',
+          headerLeft: () => (
+            <Button
+              icon={{
+                name: 'menu',
+                size: 24,
+                color: 'black',
+              }}
+              type="clear"
+              buttonStyle={{borderRadius: 200}}
+              onPress={() => props.navigation.toggleDrawer()}
+              containerStyle={{margin: 0}}
+            />
+          ),
         }}
         component={HomeTabs}
       />
