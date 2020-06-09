@@ -10,9 +10,21 @@ const Stack = createStackNavigator();
 
 function ExpensesNavigator() {
   return (
-    <Stack.Navigator initialRouteName="HomeTabs">
-      <Stack.Screen name="HomeTabs" options={{headerShown: false}} component={HomeTabs} />
-      <Stack.Screen name="Expenses" component={ExpensesScreen} />
+    <Stack.Navigator initialRouteName="HomeTabs" headerMode="screen">
+      <Stack.Screen
+        name="HomeTabs"
+        options={{headerShown: false}}
+        component={HomeTabs}
+      />
+      <Stack.Screen
+        name="Expenses"
+        options={{
+          headerTransparent: true,
+          headerTintColor: 'white',
+          headerTitle: '',
+        }}
+        component={ExpensesScreen}
+      />
       <Stack.Screen name="ExpenseForm" component={ExpenseForm} />
     </Stack.Navigator>
   );

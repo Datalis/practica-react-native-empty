@@ -11,7 +11,7 @@ const Item = props => {
       rightTitle={props.item.total}
       leftAvatar={{source: require('../../assets/images/alimentacion.png')}}
       onPress={() => {
-        props.navigation.navigate('Expenses');
+        props.navigation.navigate('Expenses', {category: 'Aseo'});
       }}
     />
   );
@@ -30,7 +30,7 @@ const HomeScreen = props => {
       <ActionButton
         buttonColor="rgba(231,76,60,1)"
         onPress={() => {
-          props.navigation.navigate('ExpenseForm');
+          props.navigation.navigate('ExpenseForm', {category: 'Aseo'});
         }}
       />
     </View>
