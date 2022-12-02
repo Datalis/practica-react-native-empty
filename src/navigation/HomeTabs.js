@@ -23,7 +23,6 @@ export default function HomeTabs() {
         style: {
           elevation: 0, // remove shadow on Android
           shadowOpacity: 0, // remove shadow on iOS,
-
         },
         activeTintColor: '#000000DE',
         inactiveTintColor: '#00000061',

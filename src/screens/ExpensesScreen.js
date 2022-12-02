@@ -1,8 +1,24 @@
 import expenses from '../data/expenses';
-import {FlatList, ImageBackground, View} from 'react-native';
+import {FlatList, ImageBackground, Text, View, StyleSheet} from 'react-native';
 import React from 'react';
 import {ListItem} from 'react-native-elements';
 import ActionButton from 'react-native-action-button';
+
+const styles = StyleSheet.create({
+  headerTitle: {
+    fontSize: 24,
+    color: 'white',
+  },
+  titleContainer: {
+    padding: 20,
+  },
+  imageBackgroundStyle: {
+    width: '100%',
+    height: 200,
+    flexDirection: 'row',
+    alignItems: 'flex-end',
+  },
+});
 
 const Item = props => {
   return (
@@ -15,8 +31,11 @@ const ExpensesScreen = props => {
     <View style={{flex: 1}}>
       <ImageBackground
         source={require('../assets/images/alimentacion.png')}
-        style={{width: '100%', height: 200}}
-      />
+        style={styles.imageBackgroundStyle}>
+        <View style={styles.titleContainer}>
+          <Text style={styles.headerTitle}>{props.route.params.category}</Text>
+        </View>
+      </ImageBackground>
       <FlatList
         keyExtractor={(item, index) => index.toString()}
         data={expenses}

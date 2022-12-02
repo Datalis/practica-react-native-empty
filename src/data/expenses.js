@@ -1,23 +1,27 @@
 const expenses = [
   {
-    producto: {
-      categoria: {
-        label: 'Comida',
-      },
-      label: 'pollo',
-    },
-    total: 60,
-    moneda: 'CUP',
+    numDoc: '99393',
+    eType: 'Alimentacion',
+    totalVal: 10,
+    providerRuc: '0917295057001',
   },
   {
-    producto: {
-      categoria: {
-        label: 'Comida',
-      },
-      label: 'perrito',
-    },
-    total: 60,
-    moneda: 'CUP',
+    numDoc: '344423',
+    eType: 'Hospedaje',
+    totalVal: 100,
+    providerRuc: '1237729393001',
+  },
+  {
+    numDoc: '48838',
+    eType: 'Hospedaje',
+    totalVal: 100,
+    providerRuc: '1237729393001',
+  },
+  {
+    numDoc: '12345',
+    eType: 'Hospedaje',
+    totalVal: 100,
+    providerRuc: '1237729393001',
   },
 ];
 
