@@ -1,31 +1,35 @@
 import { Formik } from 'formik';
 import React from 'react';
-import { View, Text, TextInput, ToastAndroid } from 'react-native';
+import { View, ToastAndroid } from 'react-native';
 import { Button, Input } from 'react-native-elements';
 import { newExpenseValidationSchema } from '../validations/newExpenseValidationSchema';
+import { saveExpense } from '../redux/actions/expense'
+import { connect } from 'react-redux';
 
 const showToast = () => {
   ToastAndroid.showWithGravityAndOffset(
-    "Guardando!",
-    ToastAndroid.LONG,
-    ToastAndroid.CENTER,
+    "Guardado exitoso!",
+    ToastAndroid.SHORT,
+    ToastAndroid.BOTTOM,
     25,
     50
   );
 };
 
-const ExpenseForm = ({route}) => {
-  const {numDoc='', eType='', providerRuc='', totalVal=''} = route.params.item;
+const ExpenseForm = ({route, saveExpense, navigation}) => {
+  const {id, numDoc='', eType='', providerRuc='', totalVal=''} = route.params.item;
   return (
     <>
         <Formik
           validateOnBlur={false}
           validateOnMount={false}
           validationSchema={newExpenseValidationSchema}
-          initialValues={{numDoc, eType, providerRuc, totalVal}}
+          initialValues={{id, numDoc, eType, providerRuc, totalVal}}
           onSubmit={(values, actions) => {
-            // guardar el viaje en base de datos
-           }}
+            saveExpense(values);
+            navigation.navigate('Expenses')
+            showToast();
+          }}
         >
         {({ handleChange, handleBlur, handleSubmit, values, errors }) => (
             <View> 
@@ -77,5 +81,8 @@ const ExpenseForm = ({route}) => {
   );
 };
 
+const actionsCreators = {
+  saveExpense
+}
 
-export default ExpenseForm;
+export default connect(null, actionsCreators)(ExpenseForm)

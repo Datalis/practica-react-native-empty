@@ -1,23 +1,28 @@
-const data = [
+let nextId = 1;
+const expenses = [
     {
+        id: nextId++,
         numDoc: '23412',
         eType: 'Alimentacion',
         providerRuc: '0705485623001',
         totalVal: '15.25',
     },
     {
+        id: nextId++,
         numDoc: '567875',
         eType: 'Transporte',
         providerRuc: '1124587022001',
         totalVal: '36.15',
     },
     {
+        id: nextId++,
         numDoc: '112354',
         eType: 'Hospedaje',
         providerRuc: '1555452215001',
         totalVal: '28.10',
     },
     {
+        id: nextId++,
         numDoc: '7765',
         eType: 'Vestimenta',
         providerRuc: '1114447111001',
@@ -97,4 +102,4 @@ const data = [
     // },
 ]
 
-export default data;
+export default {expenses, nextId};

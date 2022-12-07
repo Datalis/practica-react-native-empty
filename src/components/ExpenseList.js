@@ -13,7 +13,7 @@ import { connect } from 'react-redux';
  // import Expense from './components/Expense';
  
  const Expense = (props) => {
-   const {numDoc, eType, providerRuc, totalVal} = props.item;
+   const {numDoc, providerRuc, totalVal} = props.item;
    return (
        <View>
          <ListItem

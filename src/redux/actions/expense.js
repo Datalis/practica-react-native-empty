@@ -6,3 +6,10 @@ export function saveExpense(expense) {
     expense: expense
   };
 }
+
+export function deleteExpense(expense) {
+  return {
+    type: ActionTypes.DELETE_EXPENSE,
+    expense: expense
+  };
+}
