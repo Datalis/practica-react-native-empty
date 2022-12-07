@@ -1,8 +1,13 @@
 import React, {Component, useEffect} from 'react';
 import ExpensesNavigator from './src/navigation/ExpensesNavigator';
 import {NavigationContainer} from '@react-navigation/native';
-import {createCollection, createDbInstance, getDocs} from './src/db/db';
-import {updateExpenses} from './src/redux/actions/expenseActions';
+import {
+  createCollection,
+  createDbInstance,
+  getDocs,
+  replicate, suscribeToCollectionChanges,
+} from './src/db/db';
+import {asyncUpdateExpenses} from './src/redux/actions/expenseActions';
 import {connect} from 'react-redux';
 
 const App = props => {
@@ -12,7 +17,9 @@ const App = props => {
       await createDbInstance();
       await createCollection();
       // const docs = await getDocs();
-      props.updateExpenses();
+      replicate();
+      suscribeToCollectionChanges();
+      props.asyncUpdateExpenses();
       // console.log(docs);
     })();
   }, [props]);
@@ -25,5 +32,5 @@ const App = props => {
 
 export default connect(
   null,
-  {updateExpenses},
+  {asyncUpdateExpenses},
 )(App);

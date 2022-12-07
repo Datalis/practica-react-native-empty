@@ -11,12 +11,13 @@ export function addExpense(item) {
   };
 }
 
-export function updateExpenses(db) {
+export function updateExpenses(expenses) {
+  return {type: ActionTypes.UPDATE_EXPENSES, data: expenses};
+}
+
+export function asyncUpdateExpenses(expenses) {
   return async (dispatch, getState) => {
     let expenses = await getDocs();
-    dispatch({
-      type: ActionTypes.UPDATE_EXPENSES,
-      data: expenses,
-    });
+    dispatch(updateExpenses(expenses));
   };
 }
