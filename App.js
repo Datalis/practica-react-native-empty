@@ -1,18 +1,29 @@
-import React, {Component} from 'react';
-import Drawer from './src/navigation/Drawer';
-import {View} from 'react-native';
-import ExpenseListScreen from './src/screens/ExpenseListScreen';
+import React, {Component, useEffect} from 'react';
 import ExpensesNavigator from './src/navigation/ExpensesNavigator';
 import {NavigationContainer} from '@react-navigation/native';
+import {createCollection, createDbInstance, getDocs} from './src/db/db';
+import {updateExpenses} from './src/redux/actions/expenseActions';
+import {connect} from 'react-redux';
 
-class App extends Component {
-  render() {
-    return (
-      <NavigationContainer>
-        <ExpensesNavigator />
-      </NavigationContainer>
-    );
-  }
-}
+const App = props => {
+  useEffect(() => {
+    console.log('ejecutanto useEffect');
+    (async () => {
+      await createDbInstance();
+      await createCollection();
+      // const docs = await getDocs();
+      props.updateExpenses();
+      // console.log(docs);
+    })();
+  }, [props]);
+  return (
+    <NavigationContainer>
+      <ExpensesNavigator />
+    </NavigationContainer>
+  );
+};
 
-export default App;
+export default connect(
+  null,
+  {updateExpenses},
+)(App);
